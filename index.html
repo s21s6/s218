@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#05060a">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Mostafa Transport - Sydney Truck Transport Services</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,21 +19,10 @@
     --glass-border: rgba(255,255,255,0.18);
     --overlay-top: rgba(5,10,20,0.55);
     --overlay-bottom: rgba(5,10,20,0.85);
-    --page-bg:#05060a; /* لازم يكون قريب من لون الخلفية/الأوفرلاي عشان يخفي الشريط الأبيض */
   }
 
   *{box-sizing:border-box;}
-
-  /* هذا هو تصحيح مشكلة الشريط الأبيض على iOS:
-     لما تعمل سحب زيادة (rubber-band bounce) فوق أو تحت الصفحة،
-     الجوال يكشف خلفية html/body الافتراضية (بيضاء) لأنها مش مغطاة
-     بالـ fixed div. فحطينا نفس لون الخلفية على html و body نفسها. */
-  html, body{
-    margin:0;
-    padding:0;
-    height:100%;
-    background-color:var(--page-bg);
-  }
+  html,body{margin:0;padding:0;height:100%;}
   body{
     font-family:'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:var(--text-color);
@@ -229,7 +215,7 @@
       <img id="logoImg" alt="Logo" style="display:none;">
       <span class="logo-placeholder" id="logoPlaceholder">LOGO</span>
     </div>
-    <h1>mostafa Transport</h1>
+    <h1>Mostafa Transport</h1>
   </div>
   <nav>
     <a href="#services">Services</a>
@@ -245,7 +231,7 @@
 
   <section class="hero">
     <h2>Professional Truck Transport Services in Sydney</h2>
-    <p>Fast, secure and reliable goods transportation across Sydney — for businesses and individuals alike</p>
+    <p>Fast, secure and reliable goods transportation across Sydney — for businesses and individuals alike.</p>
     <div class="badges">
       <span class="badge">Same-day service</span>
       <span class="badge">Fully insured</span>
